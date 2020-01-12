@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="3.x-dev@e70a282bce68adaafe00980bba017c7278d511d8">
+  <file src="src/ProxyManager/Factory/AbstractBaseFactory.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$this-&gt;checkedClasses[$className]</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>class-string&lt;RealObjectType&gt;</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="tests/ProxyManagerBench/LazyLoadingGhostInstantiationBench.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$generatedClassName</code>
+    </LessSpecificReturnStatement>
+  </file>
+  <file src="tests/ProxyManagerBench/LazyLoadingValueHolderInstantiationBench.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$generatedClassName</code>
+    </LessSpecificReturnStatement>
+  </file>
+  <file src="tests/ProxyManagerBench/LazyLoadingValueHolderPropertyAccessBench.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$generatedClassName</code>
+    </LessSpecificReturnStatement>
+  </file>
+</files>
