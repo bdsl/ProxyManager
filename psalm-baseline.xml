@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="3.x-dev@e70a282bce68adaafe00980bba017c7278d511d8">
+<files psalm-version="3.x-dev@ca0c29e8a3844cd01ab3338f6e615330c447a3b9">
   <file src="src/ProxyManager/Factory/AbstractBaseFactory.php">
     <LessSpecificReturnStatement occurrences="1">
       <code>$this-&gt;checkedClasses[$className]</code>
@@ -22,5 +22,31 @@
     <LessSpecificReturnStatement occurrences="1">
       <code>$generatedClassName</code>
     </LessSpecificReturnStatement>
+  </file>
+  <file src="tests/ProxyManagerTest/Functional/AccessInterceptorScopeLocalizerFunctionalTest.php">
+    <MixedAssignment occurrences="2">
+      <code>$proxy-&gt;property0</code>
+      <code>$proxy-&gt;property0</code>
+    </MixedAssignment>
+  </file>
+  <file src="tests/ProxyManagerTest/Functional/AccessInterceptorValueHolderFunctionalTest.php">
+    <MixedAssignment occurrences="2">
+      <code>$proxy-&gt;property0</code>
+      <code>$proxy-&gt;property0</code>
+    </MixedAssignment>
+  </file>
+  <file src="tests/ProxyManagerTest/Functional/LazyLoadingGhostFunctionalTest.php">
+    <MixedAssignment occurrences="3">
+      <code>$proxy-&gt;arrayProperty</code>
+      <code>$proxy-&gt;property0</code>
+      <code>$proxy-&gt;property0</code>
+    </MixedAssignment>
+  </file>
+  <file src="tests/ProxyManagerTest/Functional/LazyLoadingValueHolderFunctionalTest.php">
+    <MixedAssignment occurrences="3">
+      <code>$proxy-&gt;arrayProperty</code>
+      <code>$proxy-&gt;property0</code>
+      <code>$proxy-&gt;property0</code>
+    </MixedAssignment>
   </file>
 </files>
