@@ -48,7 +48,7 @@ final class NullObjectMethodInterceptorTest extends TestCase
      */
     public function testBodyStructureWithoutByRefReturn() : void
     {
-        $reflectionMethod = new MethodReflection('ProxyManagerTestAsset\BaseClass', 'publicByReferenceMethod');
+        $reflectionMethod = new MethodReflection(BaseClass::class, 'publicByReferenceMethod');
 
         $method = NullObjectMethodInterceptor::generateMethod($reflectionMethod);
 
