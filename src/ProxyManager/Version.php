@@ -31,6 +31,7 @@ final class Version
      */
     public static function getVersion() : string
     {
+        /** @psalm-suppress ImpureMethodCall */
         return Versions::getVersion('ocramius/proxy-manager');
     }
 }
