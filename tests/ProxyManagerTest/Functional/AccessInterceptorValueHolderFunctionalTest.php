@@ -415,6 +415,7 @@ final class AccessInterceptorValueHolderFunctionalTest extends TestCase
 
         self::assertSame(['a', 'b'], (new ClassWithDynamicArgumentsMethod())->dynamicArgumentsMethod('a', 'b'));
 
+        /** @psalm-suppress InternalClass */
         $this->expectException(ExpectationFailedException::class);
 
         self::assertSame(['a', 'b'], $object->dynamicArgumentsMethod('a', 'b'));
